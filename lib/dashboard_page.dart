@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-import 'package:search_page/design.dart';
-import 'package:search_page/home_page.dart';
-import 'package:search_page/profile_page.dart';
+import 'package:search_page/views/design.dart';
+import 'package:search_page/views/home_page.dart';
+import 'package:search_page/views/profile_page.dart';
 
 
 class DashBoardPage extends StatelessWidget {
