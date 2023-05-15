@@ -12,6 +12,7 @@ class DashBoardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: PersistentTabView(
         context,
         screens: const [
@@ -32,6 +33,7 @@ class DashBoardPage extends StatelessWidget {
   List<PersistentBottomNavBarItem> _navBarsItems() {
     return [
       PersistentBottomNavBarItem(
+
         icon: const Icon(CupertinoIcons.home),
         title: ("Home"),
         activeColorPrimary: Color(0xff4870CF),
