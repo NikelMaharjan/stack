@@ -4,6 +4,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:search_page/constants/color.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -19,25 +20,12 @@ class HomePage extends StatelessWidget {
             Stack(
               clipBehavior: Clip.none,
               children: [
-
-
-
-
-
-
                 Container(
-
-
                   height: 180,
-
                   width: double.infinity,
-
-
-
-                  decoration: const BoxDecoration(
-                    color: Color(0xff4870CF),
-
-                    borderRadius: BorderRadius.only(
+                  decoration:  BoxDecoration(
+                    color: AppColor.blueColor,
+                    borderRadius: const BorderRadius.only(
                         bottomRight: Radius.circular(40.0),
                         bottomLeft: Radius.circular(40.0)),
                   ),
@@ -73,34 +61,20 @@ class HomePage extends StatelessWidget {
                       width: 300,
                       child: ClipRRect(
                         child: TextFormField(
-
-
                             decoration:  const InputDecoration(
-
-
                                 border: InputBorder.none,
                                 hintText:  "Search ",
                                 hintStyle: TextStyle(fontSize: 14),
                                 prefixIcon: Icon(
-
                                   Icons.search,
                                   color: Colors.grey,
                                 ),
-
-
                             )
                         ),
                       ),
                     ),
                   ),
                 ),
-
-
-
-
-
-
-
               ],
             ),
 
@@ -128,11 +102,6 @@ class HomePage extends StatelessWidget {
                 image2: "https://cdn2.iconfinder.com/data/icons/woman-professions/512/profession_avatar_woman_people_user_professional_white_work_job-07-1024.png",
                 text2: "Electrician"
             ),
-
-
-
-
-
 
           ],
         ),
