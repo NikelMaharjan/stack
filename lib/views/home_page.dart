@@ -147,14 +147,13 @@ class HomePage extends StatelessWidget {
             child: Row(
               children: [
                 Expanded(
-                  child: Container(
+                  child: SizedBox(
                     height: 160,
                     child: Card(
                       elevation: 2,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-
                           CachedNetworkImage(imageUrl: image1, height: 100,),
                            Text(text1, style: const TextStyle(fontWeight: FontWeight.w400, fontSize: 18),),
                         ],
@@ -163,14 +162,13 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 Expanded(
-                  child: Container(
+                  child: SizedBox(
                     height: 160,
                     child: Card(
                       elevation: 2,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-
                           CachedNetworkImage(imageUrl: image2, height: 100,),
                            Text(text2, style: const TextStyle(fontWeight: FontWeight.w400, fontSize: 18),),
                         ],

@@ -8,7 +8,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:search_page/constants/color.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -23,19 +23,12 @@ class ProfilePage extends StatelessWidget {
             Stack(
               clipBehavior: Clip.none,
               children: [
-
-
-
                 Container(
-
-
                   height: 360,
                   width: double.infinity,
-
-                  decoration: const BoxDecoration(
-                    color: Color(0xff4870CF),
-
-                    borderRadius: BorderRadius.only(
+                  decoration:  BoxDecoration(
+                    color: AppColor.blueColor,
+                    borderRadius: const BorderRadius.only(
                         bottomRight: Radius.circular(36.0),
                         bottomLeft: Radius.circular(36.0)),
                   ),
@@ -61,12 +54,12 @@ class ProfilePage extends StatelessWidget {
                                   ),
 
                                   elevation: 2,
-                                  child: Padding(
+                                  child:  Padding(
                                     padding: const EdgeInsets.symmetric(horizontal: 6.0, vertical: 4),
                                     child: Row(
-                                      children: const [
-                                        Icon(Icons.verified_user_outlined, color: Color(0xff4870CF), size: 18,),
-                                        Text(" Verified", style: TextStyle(color: Color(0xff4870CF), fontSize: 12),),
+                                      children: [
+                                        Icon(Icons.verified_user_outlined, color: AppColor.blueColor, size: 18,),
+                                        Text(" Verified", style: TextStyle(color: AppColor.blueColor, fontSize: 12),),
                                       ],
                                     ),
                                   ))
@@ -87,13 +80,13 @@ class ProfilePage extends StatelessWidget {
                             borderRadius: BorderRadius.all(Radius.circular(20))
                         ),
                         width: 70,
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 6.0, vertical: 4),
+                        child:  Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 6.0, vertical: 4),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [
-                              Icon(Icons.verified, color: Color(0xff4870CF), size: 18,),
-                              Text(" Active", style: TextStyle(color: Color(0xff4870CF), fontSize: 12),),
+                            children: [
+                              Icon(Icons.verified, color: AppColor.blueColor, size: 18,),
+                              Text(" Active", style: TextStyle(color:AppColor.blueColor, fontSize: 12),),
                             ],
                           ),
                         ),
@@ -106,9 +99,7 @@ class ProfilePage extends StatelessWidget {
                   top: 330,
                   right: 30,
                   left: 30,
-
                   child: Card(
-
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15.0),
                     ),
@@ -182,9 +173,6 @@ class ProfilePage extends StatelessWidget {
 
             const SizedBox(height: 70,),
 
-
-
-
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Card(
@@ -224,14 +212,6 @@ class ProfilePage extends StatelessWidget {
               ),
             )
 
-
-
-
-
-
-
-
-
           ],
         ),
 
@@ -241,9 +221,9 @@ class ProfilePage extends StatelessWidget {
 
   Widget _buildListTile({required String title, required String subtitle}) {
     return  ListTile(
-                      trailing: Icon(Icons.navigate_next),
+                      trailing: const Icon(Icons.navigate_next),
                       title: Text(title),
-                      subtitle: Text(subtitle, style: TextStyle(color: Colors.grey),),
+                      subtitle: Text(subtitle, style: const TextStyle(color: Colors.grey),),
                     );
   }
 }

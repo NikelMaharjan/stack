@@ -20,8 +20,8 @@ class DesignPage extends StatelessWidget {
                     borderRadius: BorderRadius.only(topLeft: Radius.circular(50), topRight: Radius.circular(50))
                 ),
                 margin: const EdgeInsets.only(top: 220),
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 50, bottom: 20, right: 20, left: 20),
+                child: const Padding(
+                  padding: EdgeInsets.only(top: 50, bottom: 20, right: 20, left: 20),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [

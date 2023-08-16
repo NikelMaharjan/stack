@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-import 'package:search_page/views/design.dart';
+import 'package:search_page/constants/color.dart';
 import 'package:search_page/views/home_page.dart';
 import 'package:search_page/views/profile_page.dart';
 
@@ -18,7 +18,6 @@ class DashBoardPage extends StatelessWidget {
         screens: const [
           HomePage(),
           ProfilePage(),
-
         ],
         items: _navBarsItems(),
         navBarStyle: NavBarStyle.style1,
@@ -34,15 +33,15 @@ class DashBoardPage extends StatelessWidget {
     return [
       PersistentBottomNavBarItem(
 
-        icon: const Icon(CupertinoIcons.home),
+        icon:  const Icon(CupertinoIcons.home),
         title: ("Home"),
-        activeColorPrimary: Color(0xff4870CF),
+        activeColorPrimary: AppColor.blueColor,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
       PersistentBottomNavBarItem(
-        icon: const Icon(CupertinoIcons.profile_circled),
+        icon:  const Icon(CupertinoIcons.profile_circled),
         title: ("Profile"),
-        activeColorPrimary: Color(0xff4870CF),
+        activeColorPrimary: AppColor.blueColor,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
 
